@@ -294,16 +294,44 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Editing the portfolio button */
 #portfolioButton {
-  border: 1px solid #3498db;
+  border: 1px solid white;
   background: none;
   padding: 10px 20px;
   font-size: 20px;
+  color: white;
   cursor: pointer;
   margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#portfolio a{ 
+  color: #3498db;
 }
 #portfolioButton:hover{
-  color: #fff;
+  color: #3498db;
+}
+
+#portfolioButton::before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: white;
+  z-index: -1;
+  /* transition: 0.8s; */
+}
+
+#portfolioButton::before{
+  top: 0;
+  /* border-radius: 0 0 25% 25%; */
+}
+
+#portfolioButton:hover::before{
+  height: 100%;
 }
 
 /*--------------------------------------------------------------
