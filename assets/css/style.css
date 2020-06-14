@@ -294,6 +294,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#portfolioButton {
+  border: 1px solid #3498db;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+#portfolioButton:hover{
+  color: #fff;
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
